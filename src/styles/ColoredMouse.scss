@@ -1,0 +1,22 @@
+.cursor {
+  z-index: 999;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: #ff5733;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 10px 5px #ff5733;
+  transform: translate(-50%, -50%);
+  display: none;
+  animation: colors 5s infinite;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

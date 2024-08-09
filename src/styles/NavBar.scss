@@ -1,0 +1,47 @@
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    $laptop: 1024px;
+  
+    .lg-links {
+      display: none;
+      font-size: 1.2rem;
+      @media screen and (min-width: $laptop) {
+        display: flex;
+      }
+      a {
+        margin-left: 20px;
+      }
+    }
+  
+    .sm-active {
+      display: flex;
+      @media screen and (min-width: $laptop) {
+        display: none;
+      }
+    }
+  }
+  
+  .home-icon {
+    font-size: 50px;
+    padding: 40px;
+    position: relative;
+    right: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px;
+  }
+  
+  .download-resume {
+    margin-top: -5px; 
+  }
+  
